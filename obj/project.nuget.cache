@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ztefb6JDgBJfodxToOF8LULlj8a8y9e/Kj6SN0wJYPDzH+kI5dIBVt1/Pvvg92FJEo4GU7jDjJDJtpto1REjIw==",
+  "success": true,
+  "projectFilePath": "F:\\MGDF\\MGDF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\materialdesigncolors\\2.0.4-ci82\\materialdesigncolors.2.0.4-ci82.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\materialdesignthemes\\4.3.0-ci82\\materialdesignthemes.4.3.0-ci82.nupkg.sha512"
+  ],
+  "logs": []
+}
