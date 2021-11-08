@@ -7,10 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="30" Margin="108,86,0,0" Text="URL" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="91,125,0,0" Text="URL" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
         <TextBox x:Name="URL" HorizontalAlignment="Left" Height="24" Margin="108,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
-        <Button Content="Download" HorizontalAlignment="Left" Height="53" Margin="108,164,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
-        <Button x:Name="Test" Content="Download" HorizontalAlignment="Left" Height="53" Margin="291,217,0,0" VerticalAlignment="Top" Width="109" Click="Test_Click" Cursor="Hand"/>
+        <Button Content="Download" HorizontalAlignment="Left" Height="53" Margin="108,217,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
+        <Button x:Name="Test" Content="Download" HorizontalAlignment="Left" Height="53" Margin="350,439,0,0" VerticalAlignment="Top" Width="109" Click="Test_Click" Cursor="Hand"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="273" Margin="445,38,0,0" VerticalAlignment="Top" Width="333">
+            <ListBox x:Name="downloadurl" Height="210" Width="286" SelectionChanged="downloadurl_SelectionChanged"/>
+        </ScrollViewer>
+        <TextBox x:Name="download_u" HorizontalAlignment="Left" Height="30" Margin="108,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+
 
     </Grid>
 </Window>

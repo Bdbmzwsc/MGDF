@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using System.Net;
 using System.IO;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace MGDF
 {
@@ -40,16 +42,16 @@ namespace MGDF
             string t1 = reg.Replace(URL.Text,"");
             string newurl = "https://api.github.com/repos/" + username + "/" + gitname + "/contents/" + t1;
             URL.Text = newurl;
-           // MessageBox.Show(newurl);
-            try
+            // MessageBox.Show(newurl);
+            string jsonstr = GetHttpResponse(newurl);
+          //  MessageBox.Show(jsonstr);
+            JArray jar = JArray.Parse(jsonstr);
+            for (int i = 0; i <= jar.Count - 1; i++)
             {
-                MessageBox.Show(GetHttpResponse(newurl));
+                //MessageBox.Show(jar[i].ToString());
+                JObject job = JObject.Parse(jar[i].ToString());
+               downloadurl.Items.Add(job["download_url"]);
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
 
         }
         public static string GetHttpResponse(string url)
@@ -83,6 +85,11 @@ namespace MGDF
                 MessageBox.Show(GetHttpResponse("https://blog.csdn.net/weixin_44109689/article/details/103491948"));
          
 
+        }
+
+        private void downloadurl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            download_u.Text = downloadurl.SelectedItem.ToString();
         }
     }
 }

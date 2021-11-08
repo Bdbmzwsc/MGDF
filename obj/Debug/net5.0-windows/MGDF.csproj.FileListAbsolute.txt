@@ -24,3 +24,4 @@ F:\MGDF\obj\Debug\net5.0-windows\ref\MGDF.dll
 F:\MGDF\obj\Debug\net5.0-windows\MGDF.pdb
 F:\MGDF\obj\Debug\net5.0-windows\MGDF.genruntimeconfig.cache
 F:\MGDF\obj\Debug\net5.0-windows\MGDF.csproj.AssemblyReference.cache
+F:\MGDF\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
