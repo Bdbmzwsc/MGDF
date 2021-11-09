@@ -17,6 +17,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using System.Web;
 
 namespace MGDF
 {
@@ -32,7 +33,6 @@ namespace MGDF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
             URL.Text = URL.Text.Substring(URL.Text.Length-(URL.Text.Length-19),URL.Text.Length-19);
             string[] temp = URL.Text.Split("/".ToCharArray());
             string username = temp[0];
@@ -52,7 +52,6 @@ namespace MGDF
                 JObject job = JObject.Parse(jar[i].ToString());
                downloadurl.Items.Add(job["download_url"]);
             }
-
         }
         public static string GetHttpResponse(string url)
         {
@@ -81,15 +80,32 @@ namespace MGDF
 
         private void Test_Click(object sender, RoutedEventArgs e)
         {
-      
-                MessageBox.Show(GetHttpResponse("https://blog.csdn.net/weixin_44109689/article/details/103491948"));
-         
+
+        
+
 
         }
 
         private void downloadurl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             download_u.Text = downloadurl.SelectedItem.ToString();
+            
+        }
+        public string Download_file(string url,string path)
+        {
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    client.DownloadFile(url, path);//下载文件
+                    return path;
+                }
+            }
+            catch(Exception ex)
+            {
+                return ex.Message;
+            }
+
         }
     }
 }

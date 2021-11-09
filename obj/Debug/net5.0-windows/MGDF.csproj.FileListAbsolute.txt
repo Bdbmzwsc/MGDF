@@ -25,3 +25,16 @@ F:\MGDF\obj\Debug\net5.0-windows\MGDF.pdb
 F:\MGDF\obj\Debug\net5.0-windows\MGDF.genruntimeconfig.cache
 F:\MGDF\obj\Debug\net5.0-windows\MGDF.csproj.AssemblyReference.cache
 F:\MGDF\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Data.v21.1.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Data.Desktop.v21.1.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Mvvm.v21.1.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Pdf.v21.1.Core.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Pdf.v21.1.Drawing.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Printing.v21.1.Core.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Xpf.Core.v21.1.dll
+F:\MGDF\bin\Debug\net5.0-windows\DevExpress.Xpf.Themes.Office2019Colorful.v21.1.dll
+F:\MGDF\bin\Debug\net5.0-windows\System.Private.ServiceModel.dll
+F:\MGDF\bin\Debug\net5.0-windows\System.ServiceModel.Http.dll
+F:\MGDF\bin\Debug\net5.0-windows\System.ServiceModel.Primitives.dll
+F:\MGDF\bin\Debug\net5.0-windows\System.ServiceModel.dll
+F:\MGDF\bin\Debug\net5.0-windows\MyLoadingLib.dll
