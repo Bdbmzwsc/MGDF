@@ -26,6 +26,7 @@ namespace MGDF
     /// </summary>
     public partial class MainWindow : Window
     {
+        string oldurl = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace MGDF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            oldurl = URL.Text;
             URL.Text = URL.Text.Substring(URL.Text.Length-(URL.Text.Length-19),URL.Text.Length-19);
             string[] temp = URL.Text.Split("/".ToCharArray());
             string username = temp[0];
@@ -46,11 +48,19 @@ namespace MGDF
             string jsonstr = GetHttpResponse(newurl);
           //  MessageBox.Show(jsonstr);
             JArray jar = JArray.Parse(jsonstr);
+            string path = AppDomain.CurrentDomain.BaseDirectory + "\\";
+            Directory.CreateDirectory(path + "public\\");
             for (int i = 0; i <= jar.Count - 1; i++)
             {
                 //MessageBox.Show(jar[i].ToString());
                 JObject job = JObject.Parse(jar[i].ToString());
-               downloadurl.Items.Add(job["download_url"]);
+            //   downloadurl.Items.Add(job["download_url"]);
+                if (job["type"].ToString() == "file")
+                {
+                    downloadurl.Items.Add(job["name"].ToString() + " download");
+                    string dp = path + job["path"].ToString().Replace("/", "\\");
+                    downloadurl.Items.Add(Download_file(job["download_url"].ToString(), dp));
+                }
             }
         }
         public static string GetHttpResponse(string url)
@@ -80,8 +90,8 @@ namespace MGDF
 
         private void Test_Click(object sender, RoutedEventArgs e)
         {
-
-        
+            string[] temp = URL.Text.Split("/".ToCharArray());
+            MessageBox.Show(temp[temp.Length - 1]);
 
 
         }
@@ -100,11 +110,13 @@ namespace MGDF
                     client.DownloadFile(url, path);//下载文件
                     return path;
                 }
+            
             }
             catch(Exception ex)
             {
                 return ex.Message;
             }
+            
 
         }
     }
