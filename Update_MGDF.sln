@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGDF", "MGDF.csproj", "{84056EDA-AAF6-4D68-83EA-DFF6A08CE65D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Update_MGDF", "Update_MGDF.csproj", "{ABCC22C5-FFD7-4408-8FAC-C9B3F9F3366E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{84056EDA-AAF6-4D68-83EA-DFF6A08CE65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84056EDA-AAF6-4D68-83EA-DFF6A08CE65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84056EDA-AAF6-4D68-83EA-DFF6A08CE65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84056EDA-AAF6-4D68-83EA-DFF6A08CE65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCC22C5-FFD7-4408-8FAC-C9B3F9F3366E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCC22C5-FFD7-4408-8FAC-C9B3F9F3366E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCC22C5-FFD7-4408-8FAC-C9B3F9F3366E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCC22C5-FFD7-4408-8FAC-C9B3F9F3366E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C13327AF-79A0-457F-A232-AF5F15A4EACB}
+		SolutionGuid = {F6540978-0239-4B36-974E-0C201B2F0BFF}
 	EndGlobalSection
 EndGlobal

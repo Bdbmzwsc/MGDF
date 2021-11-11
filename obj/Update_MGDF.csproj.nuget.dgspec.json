@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MGDF\\MGDF.csproj": {}
+    "F:\\MGDF\\Update\\Update_MGDF.csproj": {}
   },
   "projects": {
-    "F:\\MGDF\\MGDF.csproj": {
+    "F:\\MGDF\\Update\\Update_MGDF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MGDF\\MGDF.csproj",
-        "projectName": "MGDF",
-        "projectPath": "F:\\MGDF\\MGDF.csproj",
+        "projectUniqueName": "F:\\MGDF\\Update\\Update_MGDF.csproj",
+        "projectName": "Update_MGDF",
+        "projectPath": "F:\\MGDF\\Update\\Update_MGDF.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\MGDF\\obj\\",
+        "outputPath": "F:\\MGDF\\Update\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\SJA分析器\\SjA库\\Components\\Offline Packages",
@@ -24,7 +24,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows7.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -32,8 +32,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0-windows7.0": {
-            "targetAlias": "net5.0-windows",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -44,20 +44,12 @@
         }
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "MaterialDesignThemes": {
-              "target": "Package",
-              "version": "[4.3.0-ci82, )"
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
-            },
-            "devexpress.wpf.core": {
-              "target": "Package",
-              "version": "[21.1.5, )"
             }
           },
           "imports": [
@@ -73,9 +65,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
