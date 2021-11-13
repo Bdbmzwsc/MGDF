@@ -1,4 +1,4 @@
 {
 "AppNum": "0.0.1",
-"download_url": "https://github.com/Bdbmzwsc/MGDF/archive/refs/heads/master.zip"
+"download_url": "https://github.com/Bdbmzwsc/MGDF/releases/download/Download/MGDF.exe"
 }
